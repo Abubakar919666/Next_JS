@@ -1,11 +1,26 @@
-import Image from "next/image";
+/*
+React.FC
+React.ReactNode
+*/
+
+import { useState } from "react";
+import AllProducts from "./all-products";
+import Categories from "./categories";
+import MyInfo from "./myinfo";
 
 export default function Home() {
+  const [catalist, setCatalist] = useState(
+    [
+      "mobile Phones",
+      "cars",
+      "gadget",
+      "computer"
+    ]);
   return (
-    <div>
-      <h1>hello_Sworld</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, cum maxime. Placeat sapiente at, 
-        nihil porro ad iste sit a esse modi sint assumenda deleniti minima harum nulla possimus ex.</p>
-    </div>
+    <>
+      <MyInfo />
+      <Categories />
+      <AllProducts />
+    </>
   );
 }
