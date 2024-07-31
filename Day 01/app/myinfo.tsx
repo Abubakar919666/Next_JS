@@ -7,10 +7,10 @@ export default function MyInfo(){
             <thead>
                 <tr>                
                     <th style={{border: '1px solid black', padding: '10px'}}>
-                        Haider Ali
+                        Muhammad Abubakar
                     </th>
                     <th style={{border: '1px solid black' , padding: '10px'}}>
-                        Muhammad Shah Alam
+                        Muhammad Akram
                     </th>
                     <th style={{border: '1px solid black',  padding: '10px'}}>
                         2644
