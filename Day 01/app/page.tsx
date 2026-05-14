@@ -57,11 +57,20 @@ export default function Home() {
     ]);
   const [filteredProd, setFilteredProd] = useState(products);
 
+  const handleCategorySelect = (category: string) => {
+    if (category === "All") {
+      setFilteredProd(products);
+    } else {
+      setFilteredProd(products.filter(product => product.category === category));
+    }
+  };
+
   return (
     <>
       <MyInfo />
       <Categories
         categories={categList}
+        onCategorySelect={handleCategorySelect}
       />
       <AllProducts 
         productsList={filteredProd}

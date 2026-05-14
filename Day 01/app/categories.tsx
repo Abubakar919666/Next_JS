@@ -1,11 +1,12 @@
 "use client";
 type CategoriesType = {
-    categories: string[]
+    categories: string[];
+    onCategorySelect: (category: string) => void;
 }
 
-export default function Categories({categories}: CategoriesType) {
+export default function Categories({categories, onCategorySelect}: CategoriesType) {
     const selectCategory = (categoryName: string)=>{
-        console.log(categoryName);
+        onCategorySelect(categoryName);
     }
 
     return (
